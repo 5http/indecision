@@ -25,6 +25,7 @@
     color: white;
     font-weight: 500;
     padding: $s-size;
+    font-size: 1.75rem;
 }
 
 .button--link {
@@ -32,4 +33,13 @@
     border: none;
     color: $off-white;
     padding: 0;
+}
+
+// mobile 
+
+@media (max-width: $mobile-breakpoint) {
+    .big-button {
+        margin-bottom: $m-size;
+        font-size: 2.2rem;
+    }
 }

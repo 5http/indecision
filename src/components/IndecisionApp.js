@@ -14,9 +14,9 @@ export default class IndecisionApp extends React.Component {
 
     addOption = (option) => {
         if(!option) {
-            return 'Enter some text to add an item';
+            return 'Enter some text to add an option';
         } else if (this.state.options.indexOf(option) > -1) {
-            return 'This item already exists';
+            return 'This option already exists';
         }
         this.setState((prevState) => ({options: prevState.options.concat(option)}));
     }
@@ -61,7 +61,7 @@ export default class IndecisionApp extends React.Component {
     }
 
     render() {
-        const subtitle = 'Put your life in the hands of a computer';
+        const subtitle = 'Algorithmic life decisions';
         return (
             <div>
                 <Header subtitle={subtitle} />

@@ -22,3 +22,15 @@
     color: $off-white;
     padding: $s-size;
 }
+
+// mobile 
+
+@media (max-width: $mobile-breakpoint) {
+    .add-option {
+        flex-direction: column;
+    }
+
+    .add-option__input {
+        margin: 0 0 $s-size 0;
+    }
+}
